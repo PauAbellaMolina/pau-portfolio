@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Helvetica';
+  font-display: swap;
+  src: url('./assets/fonts/Helvetica-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gobold';
+  font-display: swap;
+  src: url('./assets/fonts/Gobold High Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  background-color: #000202;
+  color: #fff;
+  font-family: 'Helvetica', sans-serif;
+}
+.playfair, .playfair p {
+  font-family: 'Playfair Display', serif !important;
+}
+.underline-gradient {
+  border-style: solid;
+  border-width: 0 0 .28vw 0;
+  border-image: linear-gradient(90deg, #9D6A06, #910330, #5E0BBD, #00698E) 1;
+  display: inline-block;
+  line-height: 2vw;
+}
+.line-container {
+  padding: 1.3vw 0 0 2.3vw;
+}
+a {
+  -moz-transition: all .1s;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+  a:hover {
+    /* font-style: italic; */
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+::selection, ::moz-selection {
+  color: black;
+  background-color: white;
+}
